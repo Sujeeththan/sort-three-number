@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <div class="container">
+
+
+        <div class="head">
+            <h3>Sort Three Numbers</h3>
+        </div>
+
+        <form action="">
+            <div class="box">
+                <div>
+                    <label for="number1">Enter Number 1:</label>
+                    <br>
+                    <input type="number" name="number" id="num1" class="input1">
+                </div>
+                <br>
+                <div>
+                    <label for="number2">Enter Number 2:</label>
+                    <br>
+                    <input type="number" name="number" id="num2" class="input1">
+                </div>
+                <br>
+                <div>
+                    <label for="number3">Enter Number 3:</label>
+                    <br>
+                    <input type="number" name="number" id="num3" class="input1">
+                </div>
+                <br>
+                <div>
+                    <label for="text">Sort Order:</label>
+                    <br>
+                    <select name="option" id="opt" class="label">
+                        <option value="Asc">Ascending</option>
+                        <option value="Des">Descending</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <input type="submit" value="Sort" class="btn1" onclick="enter(event)">
+                    <input type="submit" value="Clear" class="btn2" onclick="(event)">
+                </div>
+            </div>
+            <br>
+
+            <div id="output"></div>
+    </div>
+    </form>
+    </div>
+
+</body>
+
+</html>
