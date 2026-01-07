@@ -1,63 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sort Three Numbers</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
-
-
 <body>
-    <div class="container">
+    <main class="container">
+        <div class="glass-panel">
+            <header class="head">
+                <h3>Sort Three Numbers</h3>
+                <p>Enter any 3 numbers below</p>
+            </header>
 
+            <form id="sortForm">
+                <div class="input-group">
+                    <div class="input-wrapper">
+                        <label for="num1">First Number</label>
+                        <input type="number" id="num1" placeholder="0" required>
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="num2">Second Number</label>
+                        <input type="number" id="num2" placeholder="0" required>
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="num3">Third Number</label>
+                        <input type="number" id="num3" placeholder="0" required>
+                    </div>
+                </div>
 
-        <div class="head">
-            <h3>Sort Three Numbers</h3>
-        </div>
-
-        <form action="">
-            <div class="box">
-                <div>
-                    <label for="number1">Enter Number 1:</label>
-                    <br>
-                    <input type="number" name="number" id="num1" class="input1">
-                </div>
-                <br>
-                <div>
-                    <label for="number2">Enter Number 2:</label>
-                    <br>
-                    <input type="number" name="number" id="num2" class="input1">
-                </div>
-                <br>
-                <div>
-                    <label for="number3">Enter Number 3:</label>
-                    <br>
-                    <input type="number" name="number" id="num3" class="input1">
-                </div>
-                <br>
-                <div>
-                    <label for="text">Sort Order:</label>
-                    <br>
-                    <select name="option" id="opt" class="label">
-                        <option value="Asc">Ascending</option>
-                        <option value="Des">Descending</option>
+                <div class="controls">
+                    <label for="opt">Order:</label>
+                    <select id="opt" class="dropdown">
+                        <option value="asc">Ascending (Low to High)</option>
+                        <option value="desc">Descending (High to Low)</option>
                     </select>
                 </div>
-                <br>
-                <div>
-                    <input type="submit" value="Sort" class="btn1" onclick="enter(event)">
-                    <input type="submit" value="Clear" class="btn2" onclick="(event)">
+
+                <div class="actions">
+                    <button type="submit" class="btn btn-primary">Sort Numbers</button>
+                    <button type="button" id="clearBtn" class="btn btn-secondary">Clear</button>
                 </div>
+            </form>
+
+            <div id="output" class="result-area hidden">
+                <span class="label">Result:</span>
+                <span id="resultValue" class="value"></span>
             </div>
-            <br>
-
-            <div id="output"></div>
-    </div>
-    </form>
-    </div>
-
+        </div>
+    </main>
+    <script src="script.js"></script>
 </body>
-
 </html>
